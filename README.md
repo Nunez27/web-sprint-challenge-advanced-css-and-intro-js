@@ -24,9 +24,13 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
+Acessibility on the web is our duty has programmers to uphold. There are many people who have different disablitlites and it is our job to provide the websites that we create to be accessbile to everyone. This includes writing correct and accurate alt tags in our images. As well as re-sizing screens according different devices.
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+alt tags detailed accordingly, resizable web-page, colors on screen
 3. How would you explain the concept of a variable to someone new to programming?
+a varible can be created to have a purpose. for example if you create a variable you can assign it to anything you want. It can have an array, or a bunch of different objects, it can hold data etc.
 4. What is the purpose of using functions in code?
+The purpose of using functions in code is to create a function that can be reusble and be used for any scenario.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 

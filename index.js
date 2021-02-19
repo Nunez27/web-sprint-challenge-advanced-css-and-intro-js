@@ -250,11 +250,12 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array){
   let newArray = [];
   for (let i = 0; i < array.length; i++){
-    if (array[i]['years'] >= 1900){
-      return array.push(newArray);
+    if (array[i]['years'] > 1900){
+      newArray.push(array[i]['years']);
     }
-  }
 }
+}
+
 
 
 
@@ -293,10 +294,10 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+function addArtist(array){
 
+}
+ 
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -306,8 +307,8 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(array){
+  
 }
 
 
