@@ -247,9 +247,6 @@ function get20s(array){
   for (let i = 0; i < array.length; i++) {
     let artist = array[i];
     let stringsToNumber = artist["years"].split("-")
-    // let newNumber = parseInt(stringsToNumber)
-    // let yearBorn = Number(stringsToNumber[0])
-    // let yearOfDeath = Number(stringsToNumber[1])
     if (stringsToNumber >= "1900" && stringsToNumber <= "2000") {
       newArray.push(artist["name"])
     }
@@ -297,7 +294,7 @@ function addArtist(array){
       years: 1999 - 19,
       genre: 'Software Engineer', 
       nationality: 'Dominican',
-      bio: 'I love playing basketball even though im not so good at it. Im starting to love to code and push myself beyond the limit'
+      bio: 'I love playing basketball even though im not so good at it. Im starting to love to code and push myself beyond my limit'
     }  
     array.push(newObject)
     return array
@@ -314,13 +311,13 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(array){
-  let brianArray = [];
+  let theRealPainters = [];
   for (let i = 0; i < array.length; i++) {
     if (array[i]["paintings"] > 100){
-      brianArray.push(array[i]["name"])
+      theRealPainters.push(array[i]["name"])
     }
   }
-  return brianArray
+  return theRealPainters
 }
 
 console.log(lotsOfArt(artists))
