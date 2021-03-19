@@ -24,9 +24,15 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
+Acessibility on the web is our responsibility to make sure everyone can get the same expierence. Acessibility can range and be many things. But some of the main ones can be type color used for black and white so it wont be so hard on the viewers eyes. Also putting alt descriptions on images so viewers can know what they are looking at etc.
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+Fill in alt tags
+Don't use Hard black/white
+Audio Description
 3. How would you explain the concept of a variable to someone new to programming?
+Varibles in JS can be anything you give a value to. It can hold arrays/objects etc. The Lambda method is to use const till you cant then let, and var should rarley be used(mostly never).
 4. What is the purpose of using functions in code?
+Functions in code protect a set of code. Functions produce something for you, it takes an input then gives you an output. Instead of writing different code for the same situations you can write a function that can always be used for certain situations instead of writing code for each individual case.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
