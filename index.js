@@ -246,14 +246,17 @@ function get20s(array){
   let newArray = [];
   for (let i = 0; i < array.length; i++) {
     let artist = array[i];
-    let stringsToNumber = artist["years"].split(' ')
-    if (stringsToNumber >= 1900 && stringsToNumber <= 2000) {
+    let stringsToNumber = artist["years"].split("-")
+    // let newNumber = parseInt(stringsToNumber)
+    // let yearBorn = Number(stringsToNumber[0])
+    // let yearOfDeath = Number(stringsToNumber[1])
+    if (stringsToNumber >= "1900" && stringsToNumber <= "2000") {
       newArray.push(artist["name"])
     }
   }
   return newArray
 }
-
+// console.log(get20s(artists))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -267,14 +270,9 @@ function get20s(array){
 
 
 function removeArtist(array, index){
-   for (let i = 0; i < array.length; i++){
-     if(array[i]) {
-       array.splice(i, 1)
-     }
-   }
-   return array
+   array.splice(index, 1)
+   return array.length
 }
-   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -293,7 +291,6 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array){
-    let emptyArray = [];
     let newObject =  { 
       id: 20,
       name: 'Brian', 
@@ -302,8 +299,8 @@ function addArtist(array){
       nationality: 'Dominican',
       bio: 'I love playing basketball even though im not so good at it. Im starting to love to code and push myself beyond the limit'
     }  
-    emptyArray.push(array)
-    return emptyArray
+    array.push(newObject)
+    return array
   }
 
 
@@ -316,11 +313,17 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(array){
+  let brianArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i]["paintings"] > 100){
+      brianArray.push(array[i]["name"])
+    }
+  }
+  return brianArray
 }
 
-
+console.log(lotsOfArt(artists))
 
 
 // 🎨🎨 STRETCH 🎨🎨//
